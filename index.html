@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🎬 Movie Search App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎬 Movie Search App</h1>
+
+    <label for="movieTitle">Enter Movie Title:</label>
+    <input type="text" id="movieTitle" placeholder="e.g. Inception" />
+
+    <label for="year">Filter by Year (optional):</label>
+    <input type="text" id="year" placeholder="e.g. 2010" />
+
+    <label for="rating">Minimum IMDb Rating (optional):</label>
+    <input type="text" id="rating" placeholder="e.g. 8.0" />
+
+    <button>Search Movie</button>
+
+    <label for="genre">Recommend by Genre:</label>
+    <select id="genre">
+      <option value="">-- Select Genre --</option>
+      <option value="Action">Action</option>
+      <option value="Sci-Fi">Sci-Fi</option>
+      <option value="Drama">Drama</option>
+      <option value="Comedy">Comedy</option>
+    </select>
+
+    <div id="results"></div>
+
+    <h3>📜 Search History</h3>
+    <ul id="history"></ul>
+
+    <button id="downloadCsv">⬇️ Download CSV</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
